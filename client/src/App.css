@@ -1,0 +1,26 @@
+/* App.css */
+
+.App {
+  text-align: center;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+html {
+  background-color: #181a1b;
+  color: #ffffff;
+}
+
+#title {
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: left;
+  color: #828282ff;
+  font-weight: 600;
+}
+
+.mainContainer {
+  margin-top: 5vh;
+}

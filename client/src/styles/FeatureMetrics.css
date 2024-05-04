@@ -1,0 +1,32 @@
+/* FeatureMetrics.css */
+.metricsList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 800px;
+  min-width: 350px;
+  margin: 0 auto;
+}
+
+.metricsList li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+
+.metricTitle {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.circular-progress-bar {
+  width: 100px;
+  height: 100px;
+}
+
+#AudioFeatures {
+  margin-top: 7vh;
+}
