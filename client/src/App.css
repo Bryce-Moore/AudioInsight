@@ -24,3 +24,10 @@ html {
 .mainContainer {
   margin-top: 5vh;
 }
+
+#github-link {
+  text-align: center;
+  color: #828282ff;
+  font-weight: 600;
+  margin-bottom: 30px;
+}

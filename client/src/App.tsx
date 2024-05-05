@@ -59,6 +59,7 @@ function App() {
           {selectedTrack && <TrackView />}
           {!selectedTrack && <Loading />}
         </div>
+        <p id="github-link">https://github.com/Bryce-Moore/AudioInsight</p>
       </div>
     )
   }

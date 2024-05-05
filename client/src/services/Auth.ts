@@ -1,4 +1,5 @@
 // services/Auth.ts
+
 const clientId = "YOUR_SPOTIFY_CLIENT_ID"
 const redirectUri = "YOUR_SPOTIFY_CALLBACK_URI"
 
@@ -43,8 +44,8 @@ async function initiateAuth() {
   const codeChallenge = await pkceChallengeFromVerifier(codeVerifier)
   window.sessionStorage.setItem("pkce_code_verifier", codeVerifier)
 
-  const scope =
-    "user-read-private user-read-email playlist-read-private playlist-modify-private playlist-modify-public"
+  const scope = ""
+    // "user-read-private user-read-email playlist-read-private playlist-modify-private playlist-modify-public"
   const authUrl = `https://accounts.spotify.com/authorize?response_type=code&client_id=${clientId}&scope=${encodeURIComponent(scope)}&redirect_uri=${encodeURIComponent(redirectUri)}&code_challenge_method=S256&code_challenge=${codeChallenge}`
 
   window.location.href = authUrl // Redirect user to Spotify's authorization page
